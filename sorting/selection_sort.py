@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 
+# Time: O(n^2)
+# Space: O(1)
 def selection_sort_in_place(list):
     for i in range(0, len(list) - 1):
         minimum = i
@@ -12,6 +14,8 @@ def selection_sort_in_place(list):
         list[minimum] = temp
 
 
+# Time: O(n^2)
+# Space: O(n)
 def selection_sort(list):
     list = list
     for i in range(0, len(list)):

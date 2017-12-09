@@ -1,19 +1,22 @@
 #!/usr/bin/env python
 
 
+# Time: O(n log n)
+# Space: O(n)
 def merge_sort(list):
     mid = len(list) // 2
-    if len(list) > 1:
-        left = []
-        right = []
-        for index in range(0, mid):
-            left.append(list[index])
-        for index in range(mid, len(list)):
-            right.append(list[index])
-        merge_sort(left)
-        merge_sort(right)
-        merge(left, right, list)
-        return list
+    if len(list) == 1:
+        return
+    left = []
+    right = []
+    for index in range(0, mid):
+        left.append(list[index])
+    for index in range(mid, len(list)):
+        right.append(list[index])
+    merge_sort(left)
+    merge_sort(right)
+    merge(left, right, list)
+    return list
 
 
 def merge(left, right, list):
@@ -39,4 +42,5 @@ def merge(left, right, list):
 
 
 list = [3, 5, 24, 6, 2, 4, 8, 7]
-print merge_sort(list)
+sorted = merge_sort(list)
+print sorted
