@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-def is_palindrome(x):
-    return str(x)[::-1] == str(x)
+def is_palindrome(number):
+    return str(number)[::-1] == str(number)
 
 
 largest_sum = 0

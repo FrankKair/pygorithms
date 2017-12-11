@@ -13,5 +13,4 @@ def lcm_of_sequence(seq):
     return reduce(least_common_multiple, seq)
 
 
-# Smallest number evenly divisible by all numbers from 1 to 20.
 print lcm_of_sequence(range(1, 20))
