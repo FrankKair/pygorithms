@@ -2,14 +2,15 @@
 import math
 
 
-def square_root_as_int(x):
+def square_root_int(x):
     return int(math.sqrt(x))
 
 
 def is_prime(number):
     if number == 1:
         return False
-    for x in range(2, square_root_as_int(number) + 1):
+    upper_bound = square_root_int(number) + 1
+    for x in range(2, upper_bound):
         if x == number:
             next
         if number % x == 0:
@@ -17,23 +18,16 @@ def is_prime(number):
     return True
 
 
-def factors_of_(number):
+def factors_of(number):
     factors = []
-    for x in range(2, square_root_as_int(number) + 1):
+    upper_bound = square_root_int(number) + 1
+    for x in range(2, upper_bound):
         if number % x == 0:
             factors.append(x)
             factors.append(number / x)
     return factors
 
 
-# Main
-factors = factors_of_(600851475143)
-
-primes = []
-for factor in factors:
-    if is_prime(factor):
-        primes.append(factor)
-print max(primes)
-
-# Functional
-print max(filter(lambda x: is_prime(x), factors_of_(600851475143)))
+factors = factors_of(600851475143)
+maximum_value = max([x for x in factors if is_prime(x)])
+print(maximum_value)
