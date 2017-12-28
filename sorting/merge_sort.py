@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 
 # Time: O(n log n)
@@ -41,6 +41,6 @@ def merge(left, right, list):
         k += 1
 
 
-list = [3, 5, 24, 6, 2, 4, 8, 7]
-sorted = merge_sort(list)
-print sorted
+list_ = [3, 5, 24, 6, 2, 4, 8, 7]
+sorted_list = merge_sort(list_)
+print(sorted_list)

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 
 # Time: O(n^2) with average O(n log n)
@@ -7,7 +7,7 @@ def quicksort(array):
     def quicksort(array, left, right):
         if left >= right:
             return
-        pivot = array[(left + right) / 2]
+        pivot = array[int((left + right) / 2)]
         index = partition(array, left, right, pivot)
         quicksort(array, left, index - 1)
         quicksort(array, index, right)
@@ -31,4 +31,4 @@ def quicksort(array):
 
 l = [4, 8, 7, 1, 3, 6, 2, 9, 5]
 quicksort(l)
-print l
+print(l)

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 
 # Time: O(n^2)
@@ -32,7 +32,7 @@ def selection_sort(list):
 # Examples
 list_to_sort = [2, 7, 4, 1, 5, 3]
 selection_sort_in_place(list_to_sort)
-print list_to_sort
+print(list_to_sort)
 
 sorted_list = selection_sort([2, 7, 4, 1, 5, 3])
-print sorted_list
+print(sorted_list)
