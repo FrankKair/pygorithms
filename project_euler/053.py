@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import math
 
@@ -14,4 +14,4 @@ for n in range(1, 101):
             if combination(n, k) >= 1000000:
                 result += 1
 
-print result
+print(result)

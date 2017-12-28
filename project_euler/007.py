@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 
 def primes():
@@ -24,4 +24,5 @@ def take_prime(n):
             return number
 
 
-print take_prime(10001)
+result = take_prime(10001)
+print(result)

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import math
 
@@ -11,4 +11,5 @@ def sum_of_digits_of_factorial(x):
     return result
 
 
-print sum_of_digits_of_factorial(100)
+result = sum_of_digits_of_factorial(100)
+print(result)

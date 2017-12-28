@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 
 def letter_count_for_number(x):
@@ -94,4 +94,4 @@ letter_count = 0
 for x in range(1, 1001):
     letter_count += letter_count_for_number(x)
 
-print letter_count
+print(letter_count)

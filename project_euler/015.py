@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import math
 
@@ -13,4 +13,5 @@ def count_routes(k):
     return combination(2 * k, k)
 
 
-print count_routes(20)
+result = count_routes(20)
+print(result)

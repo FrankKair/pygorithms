@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from itertools import takewhile
 
@@ -20,4 +20,5 @@ def primes():
         q += 1
 
 
-print sum(takewhile(lambda x: x < 2000000, primes()))
+result = sum(takewhile(lambda x: x < 2000000, primes()))
+print(result)

@@ -1,3 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 number = 2**1000
-print sum([int(i) for i in str(number)])
+result = sum([int(i) for i in str(number)])
+print(result)

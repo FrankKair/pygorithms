@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 
 def sum_of_fibonacci_numbers_under(n):
@@ -14,4 +14,4 @@ def sum_of_fibonacci_numbers_under(n):
     return total
 
 
-print sum_of_fibonacci_numbers_under(4000000)
+print(sum_of_fibonacci_numbers_under(4000000))

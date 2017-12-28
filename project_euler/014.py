@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 def generate_collatz_sequence_starting_at(number):
     list_of_numbers = []
     next_num = number
@@ -23,4 +23,4 @@ while number != 1000000:
         size_of_longest_sequence = length
         largest_starting_number = number
 
-print largest_starting_number
+print(largest_starting_number)

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 def is_palindrome(number):
     return str(number)[::-1] == str(number)
 
@@ -11,4 +11,4 @@ for x in range(0, 1000):
         if is_palindrome(product) and product > largest_sum:
             largest_sum = product
 
-print largest_sum
+print(largest_sum)
