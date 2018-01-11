@@ -12,7 +12,8 @@ def square_root_as_int(x):
 
 def factors(number):
     factors = set()
-    for x in range(1, square_root_as_int(number) + 1):
+    upper_bound = square_root_as_int(number) + 1
+    for x in range(1, upper_bound):
         if number % x == 0 and number != x:
             factors.add(number / x)
             factors.add(x)
