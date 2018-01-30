@@ -4,7 +4,8 @@ from subprocess import check_output
 
 
 def print_all_euler_results():
-    current_working_directory = os.getcwd()
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    os.chdir(dir_path)
 
     for filename in os.listdir(dir_path):
         if filename.endswith(".py") and filename.startswith("0"):            
