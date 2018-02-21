@@ -6,19 +6,13 @@ import sys
 # Indices -> 0, 1, 2...
 # size - 1
 def diagonalDifference(a):
-    primary_diagonal = []
-    secondary_diagonal = []
-
     size = len(a)
-    for i, row in enumerate(range(0, size)):
-        for j, column in enumerate(range(0, size)):
-            if i == j:
-                primary_diagonal.append(a[i][j])
-            if i + j == size - 1:
-                secondary_diagonal.append(a[i][j])
+    diff = 0
+    for index in range(0, size):
+        diff += a[index][index]
+        diff -= a[index][size - 1 - index]
 
-    return abs(sum(primary_diagonal) - sum(secondary_diagonal))
-
+    return diff
 
 if __name__ == "__main__":
     n = int(input().strip())
