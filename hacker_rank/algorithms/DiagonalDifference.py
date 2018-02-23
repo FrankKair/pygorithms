@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/env python3
 import sys
 
 
@@ -13,6 +13,7 @@ def diagonalDifference(a):
         diff -= a[index][size - 1 - index]
 
     return diff
+
 
 if __name__ == "__main__":
     n = int(input().strip())
