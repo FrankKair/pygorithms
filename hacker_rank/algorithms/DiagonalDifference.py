@@ -12,7 +12,7 @@ def diagonalDifference(a):
         diff += a[index][index]
         diff -= a[index][size - 1 - index]
 
-    return diff
+    return abs(diff)
 
 
 if __name__ == "__main__":
