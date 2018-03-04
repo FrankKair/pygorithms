@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
 
-# Modular arithmetic
-result = (28433 * pow(2, 7830457, 10**10) + 1) % 10**10 
+mod = 10 ** 10
+result = (28433 * pow(2, 7830457, mod) + 1) % mod
 print(result)
