@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import sys
+# https://www.hackerrank.com/challenges/staircase/problem
 
 
 def staircase(n):
@@ -15,5 +15,5 @@ def staircase(n):
 
 
 if __name__ == "__main__":
-    n = int(input().strip())
-    staircase(n)
+    result = staircase(6)
+    print(result)

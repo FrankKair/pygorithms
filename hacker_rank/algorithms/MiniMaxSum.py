@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-import sys
+# https://www.hackerrank.com/challenges/mini-max-sum/problem
 from itertools import permutations
 
 
-def miniMaxSum(arr):
+def mini_max_sum(arr):
     max_product = sum(max(permutations(arr, 4)))
     min_product = sum(min(permutations(arr, 4)))
     print(min_product, max_product)
 
 
 if __name__ == "__main__":
-    arr = list(map(int, input().strip().split(' ')))
-    miniMaxSum(arr)
+    arr = [1, 2, 3, 4, 5]
+    result = mini_max_sum(arr)
+    print(result)

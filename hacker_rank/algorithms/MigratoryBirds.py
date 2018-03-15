@@ -1,8 +1,8 @@
 #!/bin/python3
-import sys
+# https://www.hackerrank.com/challenges/migratory-birds/problem
 
 
-def migratoryBirds(n, ar):
+def migratory_birds(n, ar):
     frequency_list = [0] * (n + 1)
     for index in ar:
         frequency_list[index] += 1
@@ -10,7 +10,7 @@ def migratoryBirds(n, ar):
 
 
 if __name__ == '__main__':
-    n = int(input().strip())
-    ar = list(map(int, input().strip().split(' ')))
-    result = migratoryBirds(n, ar)
+    n = 6
+    ar = [1, 4, 4, 4, 5, 3]
+    result = migratory_birds(n, ar)
     print(result)

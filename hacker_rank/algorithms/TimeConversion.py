@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-import sys
+# https://www.hackerrank.com/challenges/time-conversion/problem
 
 
-def timeConversion(s):
+def time_conversion(s):
     hour = s[:2]
     rest = s[2:8]
     period = s[8:]
@@ -22,6 +22,6 @@ def timeConversion(s):
     return result
 
 
-s = input().strip()
-result = timeConversion(s)
-print(result)
+if __name__ == '__main__':
+    result = time_conversion('07:05:45PM')
+    print(result)
