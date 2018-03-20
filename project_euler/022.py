@@ -20,12 +20,18 @@ def names():
     return sorted(file.read().split(','))
 
 
-names_list = names()
+def solve():
+    names_list = names()
 
-total_score = 0
-for index, name in enumerate(names_list):
-    name = remove_quotes(name)
-    score = name_score(name) * (index + 1)
-    total_score += score
+    total_score = 0
+    for index, name in enumerate(names_list):
+        name = remove_quotes(name)
+        score = name_score(name) * (index + 1)
+        total_score += score
 
-print(total_score)
+    return total_score
+
+
+if __name__ == '__main__':
+    result = solve()
+    print(result)

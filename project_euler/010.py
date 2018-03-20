@@ -19,5 +19,10 @@ def primes():
         q += 1
 
 
-result = sum(takewhile(lambda x: x < 2000000, primes()))
-print(result)
+def solve():
+    return sum(takewhile(lambda x: x < 2000000, primes()))
+
+
+if __name__ == 'main':
+    result = solve()
+    print(result)

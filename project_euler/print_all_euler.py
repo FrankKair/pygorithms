@@ -31,4 +31,5 @@ def print_all_euler_results():
             print(out)
 
 
-print_all_euler_results()
+if __name__ == '__main__':
+    print_all_euler_results()

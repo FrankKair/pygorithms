@@ -20,8 +20,14 @@ def factors(number):
     return factors
 
 
-x = 1
-while len(factors(triangle_number(x))) < 500:
-    x += 1
+def solve():
+    x = 1
+    while len(factors(triangle_number(x))) < 500:
+        x += 1
+    
+    return triangle_number(x)
 
-print(triangle_number(x))
+
+if __name__ == 'main':
+    result = solve()
+    print(result)

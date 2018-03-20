@@ -14,15 +14,21 @@ def generate_collatz_sequence_starting_at(number):
     return list_of_numbers
 
 
-size_of_longest_sequence = 0
-largest_starting_number = 0
-number = 1
+def solve():
+    size_of_longest_sequence = 0
+    largest_starting_number = 0
+    number = 1
 
-while number != 1000000:
-    number += 1
-    length = len(generate_collatz_sequence_starting_at(number))
-    if length > size_of_longest_sequence:
-        size_of_longest_sequence = length
-        largest_starting_number = number
+    while number != 1000000:
+        number += 1
+        length = len(generate_collatz_sequence_starting_at(number))
+        if length > size_of_longest_sequence:
+            size_of_longest_sequence = length
+            largest_starting_number = number
 
-print(largest_starting_number)
+    return largest_starting_number
+
+
+if __name__ == '__main__':
+    result = solve()
+    print(result)

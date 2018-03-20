@@ -22,15 +22,22 @@ big_number_str = "73167176531330624919225119674426574742355349194934\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450"
 
-greatest_product = 0
-for index, number in enumerate(big_number_str):
-    number_str = big_number_str[index:index + 13]
 
-    product = 1
-    for number in number_str:
-        product *= int(number)
+def solve():
+    greatest_product = 0
+    for index, number in enumerate(big_number_str):
+        number_str = big_number_str[index:index + 13]
 
-    if product > greatest_product:
-        greatest_product = product
+        product = 1
+        for number in number_str:
+            product *= int(number)
 
-print(greatest_product)
+        if product > greatest_product:
+            greatest_product = product
+
+    return greatest_product
+
+
+if __name__ == 'main':
+    result = solve()
+    print(result)

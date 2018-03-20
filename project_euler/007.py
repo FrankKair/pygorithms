@@ -24,5 +24,10 @@ def take_prime(n):
             return number
 
 
-result = take_prime(10001)
-print(result)
+def solve():
+    take_prime(10001)
+
+
+if __name__ == 'main':
+    result = solve()
+    print(result)

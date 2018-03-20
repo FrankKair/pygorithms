@@ -14,4 +14,6 @@ def sum_of_fibonacci_numbers_under(n):
     return total
 
 
-print(sum_of_fibonacci_numbers_under(4000000))
+if __name__ == '__main__':
+    result = sum_of_fibonacci_numbers_under(4000000)
+    print(result)

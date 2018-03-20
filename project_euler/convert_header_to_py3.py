@@ -19,4 +19,5 @@ def convert_header_to_python3():
             continue
 
 
-convert_header_to_python3()
+if __name__ == '__main__':
+    convert_header_to_python3()

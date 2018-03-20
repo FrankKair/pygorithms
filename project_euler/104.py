@@ -37,13 +37,19 @@ def pandigital_front_and_back(a, i):
     return False
 
 
-mod = 10**9
-a = 0
-b = 1
-index = 0
-while not pandigital_front_and_back(a, index):
-    index += 1
-    # Just keeps track of the last nine digits
-    a, b = b, (a + b) % mod
+def solve():
+    mod = 10**9
+    a = 0
+    b = 1
+    index = 0
+    while not pandigital_front_and_back(a, index):
+        index += 1
+        # Just keeps track of the last nine digits
+        a, b = b, (a + b) % mod
 
-print(index)
+    return index
+
+
+if __name__ == '__main__':
+    result = solve()
+    print(result)

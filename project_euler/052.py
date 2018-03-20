@@ -10,8 +10,14 @@ def condition(x):
         4 * x) == digits(5 * x) == digits(6 * x)
 
 
-x = 1
-while not condition(x):
-    x += 1
+def solve():
+    x = 1
+    while not condition(x):
+        x += 1
 
-print(x)
+    return x
+
+
+if __name__ == '__main__':
+    result = solve()
+    print(result)

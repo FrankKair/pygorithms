@@ -7,5 +7,10 @@ def sum_of_digits_of_factorial(x):
     return sum([int(char) for char in factorial_string])
 
 
-result = sum_of_digits_of_factorial(100)
-print(result)
+def solve():
+    return sum_of_digits_of_factorial(100)
+
+
+if __name__ == '__main__':
+    result = solve()
+    print(result)

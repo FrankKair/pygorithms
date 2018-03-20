@@ -90,8 +90,14 @@ def letter_count_for_number(x):
         return resulting_length('one thousand')
 
 
-letter_count = 0
-for x in range(1, 1001):
-    letter_count += letter_count_for_number(x)
+def solve():
+    letter_count = 0
+    for x in range(1, 1001):
+        letter_count += letter_count_for_number(x)
 
-print(letter_count)
+    return letter_count
+
+
+if __name__ == '__main__':
+    result = solve()
+    print(result)

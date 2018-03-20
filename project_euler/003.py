@@ -28,6 +28,11 @@ def factors_of(number):
     return factors
 
 
-factors = factors_of(600851475143)
-maximum_value = max([x for x in factors if is_prime(x)])
-print(maximum_value)
+def solve():
+    factors = factors_of(600851475143)
+    return max([x for x in factors if is_prime(x)])
+
+
+if __name__ == '__main__':
+    result = solve()
+    print(result)

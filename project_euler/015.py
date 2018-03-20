@@ -12,5 +12,10 @@ def count_routes(k):
     return combination(2 * k, k)
 
 
-result = count_routes(20)
-print(result)
+def solve():
+    return count_routes(20)
+
+
+if __name__ == 'main':
+    result = solve()
+    print(result)

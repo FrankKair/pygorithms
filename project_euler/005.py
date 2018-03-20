@@ -16,5 +16,10 @@ def lcm_of_sequence(seq):
     return reduce(least_common_multiple, seq)
 
 
-result = lcm_of_sequence(range(1, 20))
-print(result)
+def solve():
+    return lcm_of_sequence(range(1, 20))
+
+
+if __name__ == 'main':
+    result = solve()
+    print(result)
