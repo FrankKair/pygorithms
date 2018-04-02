@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-import math
+from math import sqrt
 
 
 def square_root_int(x):
-    return int(math.sqrt(x))
+    return int(sqrt(x))
 
 
 def is_prime(number):

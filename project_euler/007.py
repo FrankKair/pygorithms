@@ -28,6 +28,6 @@ def solve():
     take_prime(10001)
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     result = solve()
     print(result)

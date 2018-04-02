@@ -20,6 +20,6 @@ def solve():
     return lcm_of_sequence(range(1, 20))
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     result = solve()
     print(result)

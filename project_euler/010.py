@@ -23,6 +23,6 @@ def solve():
     return sum(takewhile(lambda x: x < 2000000, primes()))
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     result = solve()
     print(result)

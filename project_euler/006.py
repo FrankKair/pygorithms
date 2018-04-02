@@ -11,6 +11,6 @@ def solve():
     return square_of_the_sum - squared_sum
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     result = solve()
     print(result)

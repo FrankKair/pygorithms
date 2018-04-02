@@ -28,6 +28,6 @@ def solve():
     return triangle_number(x)
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     result = solve()
     print(result)

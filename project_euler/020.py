@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-import math
+from math import factorial
 
 
 def sum_of_digits_of_factorial(x):
-    factorial_string = str(math.factorial(x))
+    factorial_string = str(factorial(x))
     return sum([int(char) for char in factorial_string])
 
 

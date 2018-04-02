@@ -38,6 +38,6 @@ def solve():
     return greatest_product
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     result = solve()
     print(result)

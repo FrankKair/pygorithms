@@ -6,6 +6,6 @@ def solve():
     return sum([int(i) for i in str(number)])
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     result = solve()
     print(result)
