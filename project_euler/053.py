@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-import math
+from math import factorial
 
 
 def combination(n, k):
-    return math.factorial(n) // (math.factorial(k) * (math.factorial(n - k)))
+    return factorial(n) // (factorial(k) * (factorial(n - k)))
 
 
 def solve():

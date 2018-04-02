@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-import math
+from math import factorial
 
 
 # n = steps
 # k = grid size
 def combination(n, k):
-    return math.factorial(n) // (math.factorial(k) * (math.factorial(n - k)))
+    return factorial(n) // (factorial(k) * (factorial(n - k)))
 
 
 def count_routes(k):
@@ -16,6 +16,6 @@ def solve():
     return count_routes(20)
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     result = solve()
     print(result)
