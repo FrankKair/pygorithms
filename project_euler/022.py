@@ -3,12 +3,7 @@ import os
 
 
 def name_score(name):
-    """
-    chr('65') >>> 'A'
-    chr('97') >>> 'a'
-    97 - 65 = 32
-    """
-    return sum([ord(char) % 32 for char in name])
+    return sum([ord(char) - 64 for char in name])
 
 
 def remove_quotes(string):
