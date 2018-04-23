@@ -30,7 +30,7 @@ def factors_of(number):
 
 def solve():
     factors = factors_of(600851475143)
-    return max([x for x in factors if is_prime(x)])
+    return max(x for x in factors if is_prime(x))
 
 
 if __name__ == '__main__':

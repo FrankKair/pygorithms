@@ -3,7 +3,7 @@ import os
 
 
 def name_score(name):
-    return sum([ord(char) - 64 for char in name])
+    return sum(ord(char) - 64 for char in name)
 
 
 def remove_quotes(string):

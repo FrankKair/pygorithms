@@ -3,7 +3,7 @@
 
 def solve():
     number = 2**1000
-    return sum([int(i) for i in str(number)])
+    return sum(int(i) for i in str(number))
 
 
 if __name__ == '__main__':

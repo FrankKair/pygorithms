@@ -4,7 +4,7 @@ from math import factorial
 
 def sum_of_digits_of_factorial(x):
     factorial_string = str(factorial(x))
-    return sum([int(char) for char in factorial_string])
+    return sum(int(char) for char in factorial_string)
 
 
 def solve():

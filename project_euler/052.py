@@ -2,7 +2,7 @@
 
 
 def digits(x):
-    return set([int(x) for x in str(x)])
+    return set(int(x) for x in str(x))
 
 
 def condition(x):
