@@ -6,7 +6,7 @@ from itertools import permutations
 def mini_max_sum(arr):
     max_product = sum(max(permutations(arr, 4)))
     min_product = sum(min(permutations(arr, 4)))
-    print(min_product, max_product)
+    return (min_product, max_product)
 
 
 if __name__ == "__main__":
