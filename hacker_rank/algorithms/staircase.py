@@ -2,16 +2,12 @@
 # https://www.hackerrank.com/challenges/staircase/problem
 
 
-def staircase(n):
-    max_line_size = n
-
+def staircase(max_line_size):
     for i in range(max_line_size, 0, -1):
         number_of_spaces = i - 1
-
         spaces = ' ' * number_of_spaces
         symbols = '#' * (max_line_size - number_of_spaces)
-
-        print(spaces + symbols)
+        return spaces + symbols
 
 
 if __name__ == "__main__":
