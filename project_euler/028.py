@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 def solve():
     acc = 1
     for x in range(3, 1003, 2):

@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 def primes():
     D = {}
     q = 2

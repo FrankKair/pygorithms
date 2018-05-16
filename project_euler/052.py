@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 def digits(x):
     return set(int(x) for x in str(x))
 
@@ -14,7 +12,6 @@ def solve():
     x = 1
     while not condition(x):
         x += 1
-
     return x
 
 

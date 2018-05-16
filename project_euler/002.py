@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 def sum_of_fibonacci_numbers_under(n):
     total = 0
     a = 1

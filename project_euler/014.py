@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 def generate_collatz_sequence_starting_at(number):
     list_of_numbers = []
     next_num = number

@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 def letter_count_for_number(x):
     one_digit = {
         1: 'one',
