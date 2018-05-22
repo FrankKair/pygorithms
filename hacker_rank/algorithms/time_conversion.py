@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 # https://www.hackerrank.com/challenges/time-conversion/problem
-
-
 def time_conversion(s):
     hour = s[:2]
     rest = s[2:8]

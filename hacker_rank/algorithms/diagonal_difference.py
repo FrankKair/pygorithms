@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # https://www.hackerrank.com/challenges/diagonal-difference/problem
-
-
-# Size -> 1, 2, 3...
-# Indices -> 0, 1, 2...
-# size - 1
 def diagonal_difference(matrix):
     size = len(matrix)
     diff = 0
