@@ -35,10 +35,10 @@ def truncatable(number):
     return True
 
 
-def sum_11_truncatable_primes():
+def sum_n_truncatable_primes(n):
     truncatable_primes = []
     number = 11
-    while not len(truncatable_primes) == 11:
+    while not len(truncatable_primes) == n:
         if truncatable(number):
             truncatable_primes.append(number)
         number += 2
@@ -46,7 +46,7 @@ def sum_11_truncatable_primes():
 
 
 def solve():
-    return sum_11_truncatable_primes()
+    return sum_n_truncatable_primes(11)
 
 
 if __name__ == '__main__':
