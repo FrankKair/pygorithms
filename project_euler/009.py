@@ -7,7 +7,7 @@ def solve():
             if a * a + b * b == c * c and a + b + c == 1000:
                 result = a * b * c
                 break
-    
+
     return result
 
 

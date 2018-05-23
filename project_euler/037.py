@@ -22,9 +22,9 @@ def truncatable(number):
     size = len(str(number))
     for i in range(0, size):
         n = str(number)
-        
+
         # Truncate left
-        left = int(n[i : size])
+        left = int(n[i:size])
 
         # Truncate right
         right = int(n[:size - i])

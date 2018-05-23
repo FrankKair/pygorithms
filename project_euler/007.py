@@ -25,6 +25,7 @@ def take_prime(n):
 def solve():
     return take_prime(10001)
 
+
 if __name__ == '__main__':
     result = solve()
     print(result)

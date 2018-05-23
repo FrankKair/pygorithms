@@ -24,7 +24,7 @@ def solve():
     x = 1
     while len(factors(triangle_number(x))) < 500:
         x += 1
-    
+
     return triangle_number(x)
 
 
