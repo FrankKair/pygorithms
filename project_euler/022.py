@@ -13,8 +13,8 @@ def name_score(name):
 
 
 def solve():
-    names_list = names()
     total_score = 0
+    names_list = names()
     for index, name in enumerate(names_list):
         score = name_score(name) * (index + 1)
         total_score += score

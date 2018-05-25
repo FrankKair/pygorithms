@@ -2,8 +2,6 @@
 from math import factorial
 
 
-# n = steps
-# k = grid size
 def combination(n, k):
     return factorial(n) // (factorial(k) * (factorial(n - k)))
 

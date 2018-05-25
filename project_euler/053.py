@@ -7,14 +7,8 @@ def combination(n, k):
 
 
 def solve():
-    result = 0
-    for n in range(1, 101):
-        for k in range(1, 101):
-            if n > k:
-                if combination(n, k) >= 1000000:
-                    result += 1
-
-    return result
+    return sum(1 for x in range(1, 101) for y in range(1, 101)
+               if x > y and combination(x, y) >= 1000000)
 
 
 if __name__ == '__main__':
