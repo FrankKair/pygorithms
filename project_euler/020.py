@@ -2,13 +2,13 @@
 from math import factorial
 
 
-def sum_of_digits_of_factorial(x):
+def sum_factorial_digits(x):
     factorial_string = str(factorial(x))
     return sum(int(char) for char in factorial_string)
 
 
 def solve():
-    return sum_of_digits_of_factorial(100)
+    return sum_factorial_digits(100)
 
 
 if __name__ == '__main__':
