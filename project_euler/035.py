@@ -9,7 +9,7 @@ def list_primes_below(n):
 	for i in range(int(sqrt(n) + 1)):
             if result[i]:
                 for j in range(i * i, len(result), i):
-		    result[j] = False
+                    result[j] = False
 	return result
 
 
