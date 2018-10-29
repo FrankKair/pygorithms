@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 # https://www.hackerrank.com/challenges/migratory-birds/problem
 from collections import Counter
 
