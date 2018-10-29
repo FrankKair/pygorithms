@@ -3,9 +3,10 @@ import os
 
 
 def names():
-    file = open(os.path.join(os.path.dirname(__file__), 'p022_names.txt'))
-    names_list = file.read().replace('\"', '').split(',')
-    return sorted(names_list)
+    file_path = os.path.join(os.path.dirname(__file__), 'p022_names.txt')
+    with open(file_path) as file_handle:
+        names_list = file_handle.read().replace('\"', '').split(',')
+        return sorted(names_list)
 
 
 def name_score(name):
