@@ -9,7 +9,7 @@ def mini_max_sum(arr):
     return (min_product, max_product)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     arr = [1, 2, 3, 4, 5]
     result = mini_max_sum(arr)
     print(result)
