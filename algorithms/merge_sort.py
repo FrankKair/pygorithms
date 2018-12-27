@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-
-
 # Time: O(n log n)
 # Space: O(n)
 def merge_sort(list):

@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-
-
 # Time: O(n^2)
 # Space: O(1)
 def selection_sort_in_place(list):

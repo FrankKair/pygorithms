@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-
-
 # Time: O(n^2) with average O(n log n)
 # Space: O(1)
 def quicksort(array):
